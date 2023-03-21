@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box; /* Make sure the specified size is limited to the border */
+}
+
+/* Body */
+.wrapper{
+    font-family: "Oxygen", sans-serif; /* Set font to Oxygen (imported above), otherwise fall back on sans-serif. */
+    justify-content: center;
+    overflow-x: hidden; /* If there is horizontal overflow, hide the scroll bar */
+    padding: 0;
+    position: relative;
+}
+
+/* Navigation */
+#sticky{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#above{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#sticky > nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#sticky > nav p{
+    width: 10%;
+    min-width: 6rem;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px 5px 0;
+}
+
+a:hover{
+    background-color: lightblue;
+}
+
+a:visited{
+    color:black;
+}
+
+#sticky > nav ul{
+    
+    width: 90%;
+}
+
+
+/* Home Main */
+/* Hero */
+#hero img{
+    width: 100%;
+}
+
+
+
+/* Gallery Main */
+
+
+
+
+/* About Main */
+
+
+
+/* Footer */
