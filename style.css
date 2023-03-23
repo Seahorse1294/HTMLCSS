@@ -25,15 +25,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0,0,0,0.3);
-}
-
-#above{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    width: 100%;
+    background-color: rgba(255,255,255,0.3);
 }
 
 #sticky > nav{
@@ -45,20 +37,33 @@
 #sticky > nav p{
     width: 10%;
     min-width: 6rem;
+    margin-left:10%;
 }
+
+#above{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+
 ul{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
 }
 
-a{
+a :not(img){
     text-decoration: none;
-    padding: 5px 5px 0;
+    padding: 5px 5px ;
+    border-bottom: 2px solid black;
 }
 
 a:hover{
     background-color: lightblue;
+    border-radius: 5px 5px 0 0;
 }
 
 a:visited{
