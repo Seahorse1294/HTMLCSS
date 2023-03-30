@@ -98,8 +98,18 @@ ul{
 
 /* Home Main */
 /* Hero */
-#hero img{
-    width: 100%;
+
+#hero {
+    height: 100vh;
+    overflow:hidden;
+    background-image:url("images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero img{ /* If CSS doesn't load, the hero image will load from html. */
+    display:none;
 }
 
 
