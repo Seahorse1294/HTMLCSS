@@ -181,7 +181,22 @@ a{
 
 /* Gallery Main */
 
+#gallery{
+    margin-top: 105px;
+    display: flex;
+    flex-direction: column;
+}
 
+.gallerycolumn{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    text-align: center;
+}
+
+#gallery img{
+    width: 50%;
+}
 
 
 /* About Main */
@@ -280,5 +295,9 @@ footer{
 
     #map iframe, #calendar iframe{
         height: 90vh;
+    }
+
+    #gallery{
+        margin: 0;
     }
 }
