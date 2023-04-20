@@ -137,8 +137,10 @@ a{
 
 .events{
     margin: 10px;
-    width: 60ch;
+    width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #eventSectionWrapper{
@@ -149,6 +151,7 @@ a{
 
 .eventSection{
     margin: 10px;
+    width: 60ch;
 }
 
 
@@ -261,6 +264,7 @@ footer{
         width: 100px;
         margin:1%;
     }
+
     #socials ul{
         flex-direction: column;
     }
