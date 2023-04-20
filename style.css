@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
 
+:root{
+    --background: rgba(150,150,150,0.7);
+}
+
+
 * {
     margin: 0;
     box-sizing: border-box; /* Make sure the specified size is limited to the border */
@@ -32,7 +37,7 @@ ul{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(150,150,150,0.3);
+    background-color: var(--background);
 }
 
 #sticky > nav{
@@ -44,7 +49,7 @@ ul{
 #sticky > nav p{
     width: 10%;
     min-width: 6rem;
-    margin-left:10%;
+    margin-left:5%;
 }
 
 #sticky li a{
@@ -64,6 +69,7 @@ ul{
 
 #sticky > nav ul{
     width: 90%;
+    margin-bottom: 10px;
 }
 
 #above{
@@ -73,12 +79,17 @@ ul{
     padding: 10px 0;
     width: 100%;
 }
+
+#above img{
+    width: 150px;
+}
+
 #above a{
-    margin-left:2%
+    margin-left:2%;
 }
 
 #above nav{
-    margin-right: 5%;
+    margin-right: 1%;
 }
 
 #above ul{
@@ -87,8 +98,10 @@ ul{
 }
 
 #above li{
-    min-width: 150px;
-    margin:2%;
+    display:flex;
+    width: 150px;
+    margin:1%;
+    justify-content: center;
 }
 
 
@@ -124,3 +137,78 @@ ul{
 
 
 /* Footer */
+
+footer{
+    background-color: var(--background);
+}
+#footerWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#footerWrapper a{
+    text-decoration: none;
+}
+#footerWrapper a:visited{
+    color: black;
+}
+
+#contact ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#sitemap ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+#sitemap ul li{
+    margin: 5% 0;
+}
+
+#socials ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#socials img{
+    width: 50px;
+    margin: 10px 20px;
+}
+
+
+#copyright img{
+    width: 32px;
+}
+
+
+
+
+
+
+/* Small screens - Mobile Phones */
+@media(max-width:650px){
+    #sticky{
+        background-color: rgba(124, 30, 179, 0.3);
+        position:static;
+    }
+    a{
+        font-size: small;
+    }
+    #above li{
+        width: 100px;
+        margin:1%;
+    }
+    #socials ul{
+        flex-direction: column;
+    }
+    #socials img{
+        width: 40%;
+        margin: 10px 10px;
+    }
+}
