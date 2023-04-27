@@ -225,6 +225,89 @@ a{
 
 /* About Main */
 
+#about{
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    margin-top: 115px;
+}
+
+#aboutmain{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.abouth2{
+    margin: auto;
+    font-size: 2rem;
+}
+
+.aboutp{
+    width: 60ch;
+    text-align: justify
+}
+
+#aboutcolumn{
+    display: flex;
+    flex-direction: row;
+}
+
+/* #timeline{
+    display:flex;
+    flex-direction: row;
+}
+
+#timeline :nth-child(even){
+    margin-bottom:5.5%;
+    color: white;
+}
+
+#timeline :nth-child(odd){
+    margin-top:5.5%;
+    color: blue;
+} */
+
+#timelinecontainer{
+    margin-top:1%
+}
+
+#top, #bottom{
+    display: flex;
+    flex-direction: row;
+}
+
+#top{
+    border-bottom: 5px solid black;
+    
+}
+
+#bottom{
+    border-top: 5px solid black;
+}
+
+.date{
+    width: 60ch;
+    text-align:center;
+    display: flex;
+}
+
+#top .date p{
+    align-self: flex-end;
+}
+
+#top .date{
+    margin-right:5%;
+    border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1%, rgba(255, 255, 255, 0.7) 100%) 0 0 100% 0/0 0 100% 0 stretch;
+}
+
+#bottom .date{
+    margin-left:5%;
+    border-image: linear-gradient(to top, rgba(255, 255, 255, 0.2) 1%, rgba(255, 255, 255, 0.7) 100%) 100% 0 0 0/100% 0 0 0 stretch;
+}
+
+
 
 
 /* Footer */
