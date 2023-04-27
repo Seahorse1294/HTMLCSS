@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
 
 :root{
-    --background: rgb(225, 181, 255);
+    --background: rgb(140, 128, 250);
 }
 
 
@@ -18,6 +18,7 @@
     padding: 0;
     position: relative;
     width: 100%;
+    background-color: var(--background);
 }
 
 ul{
@@ -58,8 +59,11 @@ a{
 }
 
 #sticky > nav ul{
-    justify-content: space-evenly;
-    margin-right: 20%;
+    justify-content:left;
+}
+
+#sticky > nav ul li{
+    margin-left: 1%;
 }
 
 #sticky li a{
@@ -96,6 +100,7 @@ a{
 
 #above a{
     margin-left:2%;
+    font-size: larger;
 }
 
 #above nav{
@@ -157,7 +162,7 @@ a{
 
 #map iframe{
     width: 100%;
-    height: 300px;
+    height: 500px;
 }
 
 #calendar iframe{
@@ -185,18 +190,37 @@ a{
     margin-top: 105px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
 .gallerycolumn{
     display: flex;
+    width: 98%;
+    justify-content: center;
+    border:5px solid rgba(0,0,0,0.5);
     flex-direction: row;
     place-items: center;
     text-align: center;
 }
 
 #gallery img{
-    width: 50%;
+    width: 75%;
 }
+
+.gallerycolumn div{
+    width: 60ch;
+}
+
+.imgdesc div{
+    margin-left: 1%;
+}
+
+.descimg div{
+    margin-right: 1%;
+}
+
+
 
 
 /* About Main */
@@ -273,11 +297,12 @@ footer{
     position:static;
     }
     a{
-        font-size: small;
+        font-size: .75rem;
     }
     #above li{
         width: 100px;
         margin:1%;
+        font-size: .75rem;
     }
 
     #socials ul{
@@ -286,6 +311,7 @@ footer{
     #socials img{
         width: 40%;
         margin: 10px 10px;
+        min-width: 30px;
     }
 
     #sticky > nav ul{
@@ -300,4 +326,20 @@ footer{
     #gallery{
         margin: 0;
     }
+
+    .gallerycolumn{
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .gallerycolumn div{
+        width: 40ch;
+        margin: 1px;
+    }
+    .gallerycolumn img{
+        margin: 5px;
+    }
+
+    
 }
