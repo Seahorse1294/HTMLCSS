@@ -202,7 +202,7 @@ a{
 
 .gallerycolumn{
     display: flex;
-    width: 90%;
+    width: 59%;
     justify-content: center;
     border:5px solid rgba(0,0,0,0.5);
     flex-direction: row;
@@ -211,12 +211,13 @@ a{
     background: white;
 }
 
-#gallery img{
-    width: 75%;
-}
+/* #gallery img{
+    width: 100%;
+} */
 
 .gallerycolumn div{
-    width: 60ch;
+    width: 40ch;
+    max-width: 600px;
 }
 
 .imgdesc div{
