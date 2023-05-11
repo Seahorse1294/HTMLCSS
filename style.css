@@ -202,12 +202,13 @@ a{
 
 .gallerycolumn{
     display: flex;
-    width: 98%;
+    width: 90%;
     justify-content: center;
     border:5px solid rgba(0,0,0,0.5);
     flex-direction: row;
     place-items: center;
     text-align: center;
+    background: white;
 }
 
 #gallery img{
@@ -220,10 +221,13 @@ a{
 
 .imgdesc div{
     margin-left: 1%;
+    text-align: left;
 }
 
 .descimg div{
     margin-right: 1%;
+    text-align: left;
+    margin-left: 10px;
 }
 
 
@@ -243,6 +247,7 @@ a{
     display: flex;
     flex-direction: column;
     margin: auto;
+    background-color: white;
 }
 
 .abouth2{
@@ -252,15 +257,15 @@ a{
 
 .aboutp{
     max-width: 60ch;
-    text-align: justify;
+    text-align: left;
     padding: 1%;
-    border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1%, rgba(255, 255, 255, 0.7) 100%) 0 0 100% 0/0 0 100% 0 stretch;
 }
 
 #aboutcolumn{
     max-width: 100%;
     display: flex;
     flex-direction: row;
+    background-color: white;
 }
 
 #timelinecontainer{
