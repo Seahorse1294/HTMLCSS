@@ -208,7 +208,7 @@ a{
     flex-direction: row;
     place-items: center;
     text-align: center;
-    background: white;
+    background: rgba(255,255,255,0.6);
 }
 
 /* #gallery img{
@@ -247,8 +247,9 @@ a{
 .aboutmain{
     display: flex;
     flex-direction: column;
-    margin: auto;
-    background-color: white;
+    margin: 1% auto;
+    padding:0 1%;
+    background-color: rgba(255,255,255,0.6);
 }
 
 .abouth2{
@@ -257,7 +258,7 @@ a{
 }
 
 .aboutp{
-    max-width: 60ch;
+    max-width: 45ch;
     text-align: left;
     padding: 1%;
 }
@@ -266,8 +267,9 @@ a{
     max-width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: rgba(255,255,255,0.4);
 }
+
 
 #timelinecontainer{
     margin-top:1%
@@ -306,6 +308,7 @@ a{
     margin-left:5%;
     border-image: linear-gradient(to top, rgba(255, 255, 255, 0.2) 1%, rgba(255, 255, 255, 0.7) 100%) 100% 0 0 0/100% 0 0 0 stretch;
 }
+
 
 
 
